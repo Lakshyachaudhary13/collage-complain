@@ -1,0 +1,22 @@
+College Complaint Management System - Live Project 🚀
+
+I am excited to share a web-based College Complaint Management System I developed! This project allows students to easily submit complaints, suggestions, and feedback through a user-friendly portal, while the admin portal provides comprehensive management features such as tracking complaint status, updating progress, and sending email notifications to keep students informed.
+
+Key Features:
+- Student registration with unique Student ID and email integration.
+- Complaint submission and status updates with email notifications.
+- Admin controls to view, update, and delete complaints.
+- Responsive design with an intuitive user interface.
+- Built with Node.js, Express, and vanilla JavaScript for the frontend.
+- Uses Nodemailer for email functionality.
+
+Try the live project locally:
+1. Clone or download the repository.
+2. Navigate to the 'complaint-management-system' directory.
+3. Run 'npm install' to install dependencies.
+4. Start the server with 'npm start' or 'npm run dev'.
+5. Open http://localhost:3000 in your browser to access the system.
+
+I’m open to feedback, contributions, and opportunities to enhance this project further. Feel free to reach out or check my GitHub for the source code!
+
+#WebDevelopment #NodeJS #Express #JavaScript #OpenSource #ProjectShare #CollegeProjects

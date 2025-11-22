@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Complaint Management System</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Student Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="admin.html">Admin Portal</a>
+        </nav>
+    </header>
+    <main class="student-main">
+        <section id="student-login" style="display: none;">
+            <h2>Student Access</h2>
+            <div id="login-toggle">
+                <button id="show-login">Login</button>
+                <button id="show-register" class="active">Register</button>
+            </div>
+            <div id="login-section">
+                <p>Login with your Student ID.</p>
+                <form id="student-login-form">
+                    <label for="login-student-id">Student ID:</label>
+                    <input type="text" id="login-student-id" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="register-section">
+                <p>Register with your name, email, and Student ID to access the portal.</p>
+                <form id="student-registration-form">
+                    <label for="reg-name">Name:</label>
+                    <input type="text" id="reg-name" required>
+
+                    <label for="reg-email">Email:</label>
+                    <input type="email" id="reg-email" required>
+
+                    <label for="reg-student-id">Student ID:</label>
+                    <input type="text" id="reg-student-id" required>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </section>
+        <section id="student-dashboard" style="display: none;">
+            <h2>Welcome, <span id="student-name"></span>!</h2>
+            <p>Manage your complaints and suggestions below.</p>
+            <button id="logout-btn">Logout</button>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>Total Submitted</h3>
+                    <p id="total-complaints">0</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Pending</h3>
+                    <p id="pending-complaints">0</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Resolved</h3>
+                    <p id="resolved-complaints">0</p>
+                </div>
+            </div>
+        </section>
+        <section id="submit-complaint" style="display: none;">
+            <h2>Submit a New Complaint or Suggestion</h2>
+            <form id="complaint-form">
+                <label for="complaint-category">Category:</label>
+                <select id="complaint-category" required>
+                    <option value="complaint" selected>Complaint</option>
+                    <option value="suggestion">Suggestion</option>
+                </select>
+
+                <label for="complaint-description">Description:</label>
+                <textarea id="complaint-description" rows="5" placeholder="Describe your complaint or suggestion in detail..." required></textarea>
+
+                <button type="submit">Submit Complaint/Suggestion</button>
+            </form>
+        </section>
+        <section id="my-complaints" style="display: none;">
+            <h2>My Submitted Complaints and Suggestions</h2>
+            <div id="my-complaints-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 College Complaint Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# Complaint Management System TODO
+
+- [x] Create index.html: Home page with navigation to student and admin sections
+- [x] Create student.html: Form for submitting complaints/suggestions and viewing submitted items
+- [x] Create admin.html: List all complaints with options to update status
+- [x] Create style.css: Basic responsive styling for all pages
+- [x] Create script.js: JavaScript logic for form handling, localStorage operations, and status updates
+- [x] Add email functionality: Students enter email during registration, complaints sent to student's email
+  - [x] Update index.html: Add email field to registration form
+  - [x] Update script.js: Modify registration/login to handle email; add email sending in complaint submission
+  - [x] Update student.html: Add EmailJS script tag
+- [x] Add delete functionality for admins to delete resolved complaints
+  - [x] Update script.js: Add deleteComplaint function and modify renderAdminComplaints to include delete button
+- [x] Send email to student when complaint status is updated
+  - [x] Update script.js: Modify updateComplaintStatus to send email notification
+- [x] Add background image to portal pages for better visual appeal
+  - [x] Update style.css: Add background image with appropriate styling
+- [x] Ensure students register once with unique Student ID and can login with same ID
+  - [x] Update script.js: Add duplicate Student ID check in handleStudentRegistrationOnPortal function
+- [x] Add toggle feature for registered students in admin portal
+  - [x] Update admin.html: Add toggle button for registered students section
+  - [x] Update script.js: Add toggle function and event listener
